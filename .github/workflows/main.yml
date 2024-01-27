@@ -1,0 +1,22 @@
+# =========== name of worflow =========
+name: CI
+#=========== Event start ==================
+# event That Trigger workflow
+on: 
+ push:
+  branches: ["main"]
+#============ Event End =====================
+#=============define jobs====================
+jobs:
+  build:
+    runs-on: ubuntu-latest
+     #=================define steps=============
+    steps:
+     - name: Run as multi-line script
+       run: |
+        echo Hello,world!
+        echo add other actions to build
+        echo test, and deploy your project
+        
+
+  

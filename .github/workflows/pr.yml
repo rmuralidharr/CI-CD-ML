@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: rmuralidharr/CI-CD-ML@v3
       - name: Setup Python
-        uses: rmuralidharr/setup-python@v4
+        uses: rmuralidharr/CI-CD-MLn@v4
         with:
           python-version: 3.9
       - name: Run Python script

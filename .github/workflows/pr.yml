@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: rmuralidharr/CI-CD-ML@1
+        uses: action/checkout@v3
       - name: Setup Python
-        uses: rmuralidharr/CI-CD-ML@1
+        uses: action/setup-python@v4
         with:
           python-version: 3.9
       - name: Run Python script
